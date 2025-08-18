@@ -1,0 +1,17 @@
+fastapi
+uvicorn
+pydantic
+starlette
+langchain-core
+langchain-google-genai
+langchain-groq
+langchain-chroma
+langchain-huggingface
+langgraph
+chromadb
+huggingface-hub
+sentence-transformers
+llama-index
+llama-index-embeddings-huggingface
+llama-index-vector-stores-chroma
+typing-extensions
