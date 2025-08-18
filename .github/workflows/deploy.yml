@@ -35,7 +35,12 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
         run: |
           echo "Running sanity check..."
-          $env:PYTHONPATH="."
-          python -c "import Alpha1; print('✅ App imported successfully!')"
+          # Set both PYTHONPATH and UTF-8 encoding
+          $env:PYTHONPATH = "."
+          [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+          
+          # Test the import (with simple text to ensure it works)
+          python -c "import Alpha1; print('App imported successfully!')"
