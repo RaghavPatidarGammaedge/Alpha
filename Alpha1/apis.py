@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI
 from urllib import request
 
-from .query import askLlamaAndMistral
 from .query2 import askGeminiAndGroq
 app=FastAPI()
 
