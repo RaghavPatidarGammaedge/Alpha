@@ -1,2 +1,6 @@
 Alpha1/alpha-venv/
 Alpha1/.idea/
+.idea/
+Alpha1/__pycache__/
+Alpha1/data/
+Alpha1/ingest.py
